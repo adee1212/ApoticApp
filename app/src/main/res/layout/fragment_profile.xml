@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileFragment"
+    android:background="#D3DFC1"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="175dp"
+        android:background="#00BF63"
+        >
+
+        <FrameLayout
+            android:id="@+id/frame1"
+            android:layout_width="match_parent"
+            android:layout_height="175dp">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="120dp"
+                android:src="@drawable/ic_baseline_person_pin_24">
+
+            </ImageView>
+
+            <TextView
+                android:layout_width="179dp"
+                android:layout_height="31dp"
+                android:layout_marginLeft="65dp"
+                android:layout_marginTop="110dp"
+                android:fontFamily="sans-serif-black"
+                android:text="Sufiyan Tsauri"
+                android:textColor="@color/black"
+                android:textSize="20dp">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="179dp"
+                android:layout_height="31dp"
+                android:layout_marginLeft="65dp"
+                android:layout_marginTop="140dp"
+                android:fontFamily="sans-serif-black"
+                android:text="08822882288"
+                android:textColor="@color/black"
+                android:textSize="20dp">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="57dp"
+                android:layout_height="21dp"
+                android:layout_marginLeft="350dp"
+                android:layout_marginTop="125dp"
+                android:fontFamily="sans-serif-black"
+                android:text="Ubah"
+                android:textColor="@color/black"
+                android:textSize="14dp">
+
+            </TextView>
+
+
+        </FrameLayout>
+    </RelativeLayout>
+
+
+    <FrameLayout
+        android:id="@+id/frame2"
+        android:layout_width="match_parent"
+        android:layout_height="347dp"
+        android:layout_marginTop="200dp">
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_width="400dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="90dp"
+            android:text="Layanan"
+            android:textSize="25dp"
+            android:fontFamily="sans-serif-thin"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            >
+
+        </TextView>
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_width="400dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="10dp"
+            android:text="Notifikasi"
+            android:textSize="25dp"
+            android:fontFamily="sans-serif-thin"
+            android:textColor="@color/black"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_width="400dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="170dp"
+            android:text="Temukan Kami"
+            android:textSize="25dp"
+            android:fontFamily="sans-serif-thin"
+            android:textColor="@color/black"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_width="400dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="250dp"
+            android:text="Keluar"
+            android:textSize="25dp"
+            android:fontFamily="sans-serif-thin"
+            android:textColor="@color/black"
+            android:textStyle="bold">
+
+        </TextView>
+    </FrameLayout>
+
+
+    <ImageView
+        android:layout_width="209dp"
+        android:layout_height="157dp"
+        android:layout_marginLeft="250dp"
+        android:layout_marginTop="500dp"
+        android:src="@drawable/rounded">
+
+    </ImageView>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/frame_layout"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints">
+
+        </FrameLayout>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavigationView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:menu="@menu/bottom_nav_menu"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <!--<ListView
+        android:layout_marginTop="200dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/listview"
+        >
+
+    </ListView>-->
+
+</RelativeLayout>

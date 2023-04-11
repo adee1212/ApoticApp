@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+ >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="#69EC61"/>
+
+    <ImageView
+        android:id="@+id/promo"
+        android:layout_width="match_parent"
+        android:layout_height="201dp"
+        android:layout_gravity="top"
+        android:src="@drawable/promo"
+        android:layout_centerHorizontal="true"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_menu"
+                android:layout_width="386dp"
+                android:layout_height="386dp"
+                android:layout_below="@+id/promo"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="89dp"
+                android:layout_marginRight="25dp"
+                tools:listitem="@layout/item_dashboard" />
+
+            <TextView
+                android:textColor="@color/black"
+                android:id="@+id/beritalink"
+                android:layout_width="192dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="230dp"
+                android:layout_marginLeft="10dp"
+                android:minHeight="48dp"
+                android:onClick="berita"
+                android:text="klik berita disini"
+                android:textSize="20dp"
+                android:textStyle="bold">
+
+            </TextView>
+            <ImageView
+                android:src="@drawable/ic_baseline_map_24"
+                android:textColor="@color/black"
+                android:id="@+id/beritalink2"
+                android:layout_width="192dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="230dp"
+                android:layout_marginLeft="230dp"
+                android:minHeight="48dp"
+                android:onClick="throww"
+
+                android:textStyle="bold">
+
+            </ImageView>
+        </RelativeLayout>
+    </ScrollView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/frame_layout"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints">
+
+        </FrameLayout>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavigationView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:menu="@menu/bottom_nav_menu"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</RelativeLayout>
+
